@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Untitled Business", description = "dog boarding app that monetizes the dickens out of pet owners in a fair way" } = Astro.props;
+const { title = "Pawly — Fair Care for Your Best Friend", description = "Dog boarding with transparent pricing, vetted caregivers, and fees that don't punish loyalty. Pawly takes 12% — not 40% like Rover or Wag." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -16,8 +16,31 @@ const { title = "Untitled Business", description = "dog boarding app that moneti
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://pawly.bywillo.ai/" />
+    <meta property="og:title"       content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:image"       content="https://pawly.bywillo.ai/og-image.png" />
+    <meta property="og:site_name"   content="Pawly" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image"       content="https://pawly.bywillo.ai/og-image.png" />
+
+    <!-- Canonical & crawl -->
+    <link rel="canonical" href="https://pawly.bywillo.ai/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme color (amber brand) -->
+    <meta name="theme-color" content="#F5A623" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+
     <title>{title}</title>
   </head>
   <body class="min-h-screen flex flex-col bg-surface-50 text-surface-900 font-body antialiased">

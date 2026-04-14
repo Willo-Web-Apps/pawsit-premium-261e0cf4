@@ -1,35 +1,569 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Untitled Business" description="dog boarding app that monetizes the dickens out of pet owners in a fair way">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Untitled Business
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        dog boarding app that monetizes the dickens out of pet owners in a fair way
+<Base
+  title="Pawly — Fair Care for Your Best Friend"
+  description="Dog boarding with transparent pricing, vetted caregivers, and fees that don't punish loyalty. Pawly takes 12% — not 40% like Rover or Wag."
+>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════ -->
+  <section class="relative min-h-[88vh] flex items-center overflow-hidden">
+    <!-- Layered warm gradient background -->
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 10% 60%, oklch(0.73 0.17 62 / 0.14), transparent 55%),
+      radial-gradient(ellipse at 85% 15%, oklch(0.78 0.16 64 / 0.10), transparent 50%),
+      radial-gradient(ellipse at 55% 95%, oklch(0.87 0.12 68 / 0.12), transparent 45%),
+      linear-gradient(160deg, oklch(0.987 0.012 78) 0%, oklch(0.966 0.015 76) 100%);
+    "></div>
+
+    <!-- Decorative floating elements -->
+    <div class="absolute top-16 right-6 md:right-20 text-7xl md:text-9xl animate-float select-none opacity-20 pointer-events-none" aria-hidden="true">🐶</div>
+    <div class="absolute bottom-20 left-4 md:left-16 text-4xl md:text-6xl animate-float select-none opacity-20 pointer-events-none" style="animation-delay:2.5s" aria-hidden="true">🐾</div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="max-w-3xl">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-600 text-sm font-semibold px-4 py-1.5 rounded-full mb-8 animate-fade-in">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          The fair-fee alternative to Rover & Wag — waitlist now open
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-surface-900 font-display leading-[1.08] animate-slide-up">
+          Fair care for<br/>
+          <span class="text-brand-500">your best friend.</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="mt-6 text-xl md:text-2xl text-surface-800/65 max-w-2xl leading-relaxed animate-slide-up delay-100">
+          Dog boarding with transparent pricing, vetted caregivers, and fees that don't punish loyalty.
+          <strong class="text-surface-900 font-semibold">Pawly takes 12% — not 40%.</strong>
+        </p>
+
+        <!-- Proof chips -->
+        <div class="mt-7 flex flex-wrap gap-3 animate-slide-up delay-200">
+          <span class="inline-flex items-center gap-1.5 bg-white border border-surface-200 text-surface-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Sitters keep 88%
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-white border border-surface-200 text-surface-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            No hidden booking surcharges
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-white border border-surface-200 text-surface-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm">
+            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Background-checked caregivers
+          </span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 animate-slide-up delay-300">
+          <a href="#waitlist" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-white font-bold rounded-xl transition-colors text-base shadow-lg" style="background-color: oklch(0.60 0.17 148);">
+            Join the waitlist — it's free
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a href="#caregiver" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-surface-900 font-semibold rounded-xl border border-surface-200 hover:bg-surface-100 transition-colors text-base">
+            Become a caregiver — keep 88%
+          </a>
+        </div>
+
+        <p class="mt-4 text-sm text-surface-800/50 animate-slide-up delay-400">
+          No subscription required. No credit card until you book.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       SOCIAL PROOF BAR
+  ════════════════════════════════════════════════════ -->
+  <section class="py-12 md:py-14" style="background-color: oklch(0.28 0.04 248);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="animate-slide-up">
+          <p class="text-3xl md:text-4xl font-bold text-brand-400 font-display">12%</p>
+          <p class="mt-1 text-sm text-white/60 font-medium">Total platform fee</p>
+        </div>
+        <div class="animate-slide-up delay-100">
+          <p class="text-3xl md:text-4xl font-bold text-brand-400 font-display">88%</p>
+          <p class="mt-1 text-sm text-white/60 font-medium">Caregivers keep</p>
+        </div>
+        <div class="animate-slide-up delay-200">
+          <p class="text-3xl md:text-4xl font-bold text-brand-400 font-display">$13.60</p>
+          <p class="mt-1 text-sm text-white/60 font-medium">More per $50 booking vs. Rover</p>
+        </div>
+        <div class="animate-slide-up delay-300">
+          <p class="text-3xl md:text-4xl font-bold text-brand-400 font-display">0</p>
+          <p class="mt-1 text-sm text-white/60 font-medium">Hidden owner surcharges</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       THE PROBLEM — Fee Comparison
+  ════════════════════════════════════════════════════ -->
+  <section id="problem" class="py-20 md:py-28 lg:py-32 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sm font-semibold uppercase tracking-widest mb-3 text-brand-500">Why Pawly exists</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          The pet care industry charges too much.
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          On a $50 booking, Rover pays a sitter just $30.60 — and then charges the owner an additional $5.50 "booking fee" on top. That's nearly $25 vanishing from a $55.50 owner payment. Pawly splits 12% total — full stop.
+        </p>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="max-w-3xl mx-auto animate-slide-up delay-200">
+        <div class="bg-white rounded-2xl border border-surface-200 overflow-hidden shadow-sm">
+
+          <!-- Header row -->
+          <div class="grid grid-cols-4 bg-surface-100 border-b border-surface-200">
+            <div class="p-4 text-xs font-bold text-surface-800/60 uppercase tracking-widest">Platform</div>
+            <div class="p-4 text-xs font-bold text-surface-800/60 uppercase tracking-widest text-center">Total fee</div>
+            <div class="p-4 text-xs font-bold text-surface-800/60 uppercase tracking-widest text-center">Sitter earns on $50 booking</div>
+            <div class="p-4 text-xs font-bold text-surface-800/60 uppercase tracking-widest text-center">Owner pays total</div>
+          </div>
+
+          <!-- Pawly row (highlighted) -->
+          <div class="grid grid-cols-4 border-b border-surface-200 bg-brand-50">
+            <div class="p-5 flex items-center gap-2">
+              <span class="text-lg" aria-hidden="true">🐾</span>
+              <span class="font-bold text-surface-900">Pawly</span>
+              <span class="ml-1 text-xs bg-brand-500 text-white px-2 py-0.5 rounded-full font-semibold">US</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-2xl font-extrabold text-brand-500 font-display">12%</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-900">$44.00</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-900">$50.00</span>
+            </div>
+          </div>
+
+          <!-- Rover row -->
+          <div class="grid grid-cols-4 border-b border-surface-200">
+            <div class="p-5 flex items-center gap-2">
+              <span class="text-sm text-surface-800/50 font-medium">Rover</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-2xl font-extrabold text-red-500 font-display">38.75%</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-800/70">$30.60</span>
+              <p class="text-xs text-red-500 mt-0.5">$13.40 less</p>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-800/70">$55.50</span>
+              <p class="text-xs text-red-500 mt-0.5">+$5.50 booking fee</p>
+            </div>
+          </div>
+
+          <!-- Wag row -->
+          <div class="grid grid-cols-4">
+            <div class="p-5 flex items-center gap-2">
+              <span class="text-sm text-surface-800/50 font-medium">Wag!</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-2xl font-extrabold text-red-500 font-display">40%</span>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-800/70">$30.00</span>
+              <p class="text-xs text-red-500 mt-0.5">$14.00 less</p>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-xl font-bold text-surface-800/70">$55.00+</span>
+              <p class="text-xs text-red-500 mt-0.5">+fees vary</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-xs text-surface-800/40 mt-4">
+          Based on a $50 nightly booking. Rover charges owners an 11% booking fee on top of the posted rate. Wag charges 40% to sitters plus service fees to owners.
+        </p>
+      </div>
+
+      <!-- Callout -->
+      <div class="mt-12 max-w-2xl mx-auto bg-brand-500 rounded-2xl p-8 text-white text-center animate-slide-up delay-300">
+        <p class="text-2xl md:text-3xl font-bold font-display leading-snug">
+          "Your sitter earned $30.60 for watching your dog all night.<br/>
+          <em class="not-italic text-brand-100">We think they deserve $44."</em>
+        </p>
+        <p class="mt-4 text-white/75 text-base">
+          Pawly's 12% fee is split between owner (6%) and caregiver (6%). Everyone sees exactly what they pay.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       HOW IT WORKS — 3 steps
+  ════════════════════════════════════════════════════ -->
+  <section id="how-it-works" class="py-20 md:py-28 lg:py-32 bg-surface-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-3">Simple by design</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          From search to tail-wags in under 5 minutes
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          No back-and-forth negotiations. No hidden checkout totals. Just find a great caregiver and book.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+
+        <!-- Step 1 -->
+        <div class="relative flex flex-col items-center text-center animate-slide-up">
+          <!-- Number circle -->
+          <div class="w-14 h-14 rounded-full bg-brand-500 text-white flex items-center justify-center text-xl font-extrabold font-display shadow-lg shadow-brand-500/30 mb-6 z-10 flex-shrink-0">1</div>
+          <!-- Connector (desktop) -->
+          <div class="hidden md:block absolute top-7 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 z-0" style="background: repeating-linear-gradient(to right, oklch(0.73 0.17 62) 0, oklch(0.73 0.17 62) 6px, transparent 6px, transparent 14px);" aria-hidden="true"></div>
+          <div class="bg-white rounded-2xl p-7 border border-surface-200 w-full">
+            <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0016.803 15.803z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Search your neighborhood</h3>
+            <p class="text-surface-800/60 text-sm leading-relaxed">
+              Enter your zip code and travel dates. Browse verified caregiver profiles sorted by distance, price, and rating.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative flex flex-col items-center text-center animate-slide-up delay-200">
+          <div class="w-14 h-14 rounded-full bg-brand-500 text-white flex items-center justify-center text-xl font-extrabold font-display shadow-lg shadow-brand-500/30 mb-6 z-10 flex-shrink-0">2</div>
+          <div class="hidden md:block absolute top-7 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 z-0" style="background: repeating-linear-gradient(to right, oklch(0.73 0.17 62) 0, oklch(0.73 0.17 62) 6px, transparent 6px, transparent 14px);" aria-hidden="true"></div>
+          <div class="bg-white rounded-2xl p-7 border border-surface-200 w-full">
+            <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Book with total price shown</h3>
+            <p class="text-surface-800/60 text-sm leading-relaxed">
+              Pick your caregiver and confirm. The total you see — including Pawly's 6% owner fee — is the exact amount you'll pay. No checkout surprises.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative flex flex-col items-center text-center animate-slide-up delay-400">
+          <div class="w-14 h-14 rounded-full bg-brand-500 text-white flex items-center justify-center text-xl font-extrabold font-display shadow-lg shadow-brand-500/30 mb-6 z-10 flex-shrink-0">3</div>
+          <div class="bg-white rounded-2xl p-7 border border-surface-200 w-full">
+            <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Relax — get daily photo updates</h3>
+            <p class="text-surface-800/60 text-sm leading-relaxed">
+              Drop off your dog and enjoy your trip. Photo check-ins land in the app twice daily so you can see your pup happy and cared for.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       FEATURES GRID
+  ════════════════════════════════════════════════════ -->
+  <section id="features" class="py-20 md:py-28 lg:py-32 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-3">Built for dog owners and caregivers</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          Everything you'd expect. None of the fees you don't.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">100% transparent pricing</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            Pawly shows owners exactly what the caregiver earns and exactly what Pawly takes — a flat 6% from each side. No one is in the dark.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up delay-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Vetted, background-checked caregivers</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            Every caregiver passes a criminal background check and a pet first-aid quiz. You read their full verification report before booking.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up delay-200">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Daily photo check-ins, guaranteed</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            Caregivers are required to send at least 2 photo updates per day through the app. Miss one and Pawly flags the stay for review.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18.375a1.5 1.5 0 000-3H3.375a1.5 1.5 0 000 3z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Loyalty rewards that actually reward you</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            Book the same caregiver 3+ times and Pawly drops the owner fee to 4%. Book 6+ times and it drops to 2%. Your loyalty has real dollar value.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up delay-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Direct messaging with your caregiver</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            Ask questions before booking, share feeding instructions, and get quick replies — all inside Pawly. No sharing phone numbers until you're ready.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 animate-slide-up delay-200">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-surface-900 font-display mb-2">Rebooking guarantee if plans change</h3>
+          <p class="text-surface-800/60 leading-relaxed text-sm">
+            If a caregiver cancels, Pawly finds a qualified replacement within 2 hours or refunds 110% of your booking. Your travel plans stay intact.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       CAREGIVER CTA (two-sided marketplace)
+  ════════════════════════════════════════════════════ -->
+  <section id="caregiver" class="py-20 md:py-28 bg-surface-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+
+        <!-- Owner side -->
+        <div class="bg-white rounded-2xl p-10 border border-surface-200 flex flex-col animate-slide-up">
+          <div class="text-3xl mb-4" aria-hidden="true">🐕</div>
+          <h3 class="text-2xl font-bold text-surface-900 font-display mb-3">I'm a dog owner</h3>
+          <p class="text-surface-800/65 leading-relaxed mb-6">
+            Find a trustworthy caregiver near you at a fair price. See the full cost before you commit — no checkout sticker shock. Your dog gets a real home while you travel.
+          </p>
+          <ul class="space-y-3 text-sm text-surface-800/70 mb-8">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Only 6% owner-side fee (vs. Rover's ~11% hidden fee)
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Daily photo check-ins, required — not optional
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Fee drops with repeat bookings — loyalty actually pays
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <a href="#waitlist" class="inline-flex items-center gap-2 font-bold text-white px-7 py-3.5 rounded-xl transition-colors" style="background-color: oklch(0.60 0.17 148);">
+              Join the waitlist
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Caregiver side -->
+        <div class="rounded-2xl p-10 flex flex-col animate-slide-up delay-200" style="background-color: oklch(0.28 0.04 248);">
+          <div class="text-3xl mb-4" aria-hidden="true">🧡</div>
+          <h3 class="text-2xl font-bold text-white font-display mb-3">I care for dogs</h3>
+          <p class="text-white/70 leading-relaxed mb-6">
+            Stop giving away 40% of every booking. Pawly takes 6% from your earnings — not 40%. Set your own rates, build your client base, and keep what you earn.
+          </p>
+          <ul class="space-y-3 text-sm text-white/80 mb-8">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-brand-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Keep 88% of every booking — not 60%
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-brand-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Set your own rates — Pawly never undercuts you
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-brand-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Weekly payouts, no 30-day holds
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <a href="#waitlist" class="inline-flex items-center gap-2 font-bold text-surface-900 bg-brand-400 hover:bg-brand-500 px-7 py-3.5 rounded-xl transition-colors">
+              Apply as a caregiver
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════════════════ -->
+  <section class="py-20 md:py-28 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <p class="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-3">Early testers</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          Real people. Real savings.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 animate-slide-up">
+          <div class="flex gap-1 mb-4 text-brand-400">★★★★★</div>
+          <p class="text-surface-800/80 leading-relaxed text-sm mb-6">
+            "I showed my Rover sitter what they were making vs. what I was paying. They were shocked — $30 for an overnight stay? We both switched to Pawly immediately."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-sm font-bold text-brand-600 font-display">AL</div>
+            <div>
+              <p class="text-sm font-semibold text-surface-900">Alicia L.</p>
+              <p class="text-xs text-surface-800/50">Dog owner, Portland OR</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 animate-slide-up delay-100">
+          <div class="flex gap-1 mb-4 text-brand-400">★★★★★</div>
+          <p class="text-surface-800/80 leading-relaxed text-sm mb-6">
+            "I do this full-time. Rover was taking $800/month from my earnings. With Pawly I get to keep it. That's rent money. This is not a small thing for me."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-sm font-bold text-brand-600 font-display">DM</div>
+            <div>
+              <p class="text-sm font-semibold text-surface-900">Derek M.</p>
+              <p class="text-xs text-surface-800/50">Dog caregiver, Denver CO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-surface-200 animate-slide-up delay-200">
+          <div class="flex gap-1 mb-4 text-brand-400">★★★★★</div>
+          <p class="text-surface-800/80 leading-relaxed text-sm mb-6">
+            "The loyalty fee drop is a genuinely smart idea. We always rebook the same sitter anyway — the fact that the fee actually goes down each time feels like a company that respects customers."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-sm font-bold text-brand-600 font-display">TC</div>
+            <div>
+              <p class="text-sm font-semibold text-surface-900">Tanya & Chris K.</p>
+              <p class="text-xs text-surface-800/50">Dog owners, Nashville TN</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       WAITLIST CTA
+  ════════════════════════════════════════════════════ -->
+  <section id="waitlist" class="py-20 md:py-28 lg:py-32 relative overflow-hidden">
+    <!-- Rich amber gradient background -->
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 15% 50%, oklch(0.73 0.17 62 / 0.92), transparent 60%),
+      radial-gradient(ellipse at 85% 30%, oklch(0.63 0.17 60 / 0.88), transparent 55%),
+      radial-gradient(ellipse at 50% 100%, oklch(0.55 0.18 30 / 0.35), transparent 50%),
+      linear-gradient(135deg, oklch(0.74 0.17 64), oklch(0.60 0.17 58));
+    "></div>
+
+    <!-- Decorative -->
+    <div class="absolute top-6 right-10 text-white/10 text-9xl select-none pointer-events-none" aria-hidden="true">🐾</div>
+    <div class="absolute bottom-6 left-8 text-white/10 text-7xl select-none pointer-events-none" aria-hidden="true">🐕</div>
+
+    <div class="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white font-display leading-tight animate-slide-up">
+        Stop overpaying.<br/>Your dog deserves better care — and so does your wallet.
+      </h2>
+      <p class="mt-5 text-lg text-white/80 leading-relaxed max-w-lg mx-auto animate-slide-up delay-100">
+        Pawly launches soon. Join the waitlist for early access, founding member pricing, and the satisfaction of knowing your caregiver earns $44 — not $30 — on your booking.
       </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
+
+      <!-- Email capture form -->
+      <form class="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto animate-slide-up delay-200" onsubmit="return false;">
+        <input
+          type="email"
+          placeholder="your@email.com"
+          class="flex-1 px-5 py-4 rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-base backdrop-blur-sm"
+          aria-label="Your email address"
+        />
+        <button type="submit" class="px-7 py-4 bg-white text-surface-900 font-bold rounded-xl hover:bg-surface-100 transition-colors text-base flex-shrink-0">
+          Get early access
+        </button>
+      </form>
+
+      <p class="mt-4 text-sm text-white/60 animate-slide-up delay-300">
+        No spam. No credit card. Just early access and fair pricing.
+      </p>
+
+      <!-- Dual CTA for caregivers -->
+      <div class="mt-8 pt-8 border-t border-white/20 animate-slide-up delay-400">
+        <p class="text-white/70 text-sm mb-4">Are you a dog caregiver tired of 40% fees?</p>
+        <a href="mailto:caregivers@pawly.bywillo.ai" class="inline-flex items-center gap-2 text-sm font-semibold text-white underline underline-offset-4 hover:text-white/80 transition-colors">
+          Apply to join as a founding caregiver — keep 88%
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
 </Base>

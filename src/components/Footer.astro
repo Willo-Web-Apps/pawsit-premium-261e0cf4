@@ -1,11 +1,55 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="border-t border-surface-200 bg-surface-100 py-14 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Untitled Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Untitled Business. All rights reserved.</p>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-3">
+          <span class="text-2xl" aria-hidden="true">🐾</span>
+          <span class="text-xl font-bold text-surface-900 font-display">Pawly</span>
+        </a>
+        <p class="text-sm text-surface-800/55 leading-relaxed">
+          Fair care for your best friend. Dog boarding with transparent pricing — 12%, not 40%.
+        </p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <h3 class="text-xs font-semibold text-surface-900 uppercase tracking-widest mb-4">Product</h3>
+        <ul class="space-y-2.5">
+          <li><a href="#features"     class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Features</a></li>
+          <li><a href="#how-it-works" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">How it works</a></li>
+          <li><a href="#problem"      class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Why Pawly</a></li>
+        </ul>
+      </div>
+
+      <!-- Caregivers -->
+      <div>
+        <h3 class="text-xs font-semibold text-surface-900 uppercase tracking-widest mb-4">Caregivers</h3>
+        <ul class="space-y-2.5">
+          <li><a href="#caregiver" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Become a caregiver</a></li>
+          <li><a href="#caregiver" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Caregiver earnings</a></li>
+          <li><a href="/blog"      class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h3 class="text-xs font-semibold text-surface-900 uppercase tracking-widest mb-4">Company</h3>
+        <ul class="space-y-2.5">
+          <li><a href="mailto:hello@pawly.bywillo.ai" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Contact</a></li>
+          <li><a href="#" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-sm text-surface-800/60 hover:text-surface-900 transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-surface-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm font-bold text-surface-900 font-display">Pawly — Fair care for your best friend.</p>
+      <p class="text-sm text-surface-800/50">&copy; {year} Pawly. All rights reserved.</p>
     </div>
   </div>
 </footer>
